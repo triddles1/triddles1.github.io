@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Data Recovery Case Study | Your Name</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 30px 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .case-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .meta-item {
+            background-color: rgba(255,255,255,0.2);
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .case-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .problem-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        @media (max-width: 768px) {
+            .problem-solution {
+                grid-template-columns: 1fr;
+            }
+        }
+        .problem, .solution {
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .problem {
+            background-color: #fff3f3;
+            border-left: 4px solid #ff6b6b;
+        }
+        .solution {
+            background-color: #f0fff4;
+            border-left: 4px solid #4CAF50;
+        }
+        .tech-used {
+            margin: 20px 0;
+        }
+        .tech-item {
+            display: inline-block;
+            background-color: #e1f0ff;
+            padding: 5px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .results {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #003d7a;
+        }
+        .screenshots {
+            margin: 30px 0;
+        }
+        .screenshot {
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+        .screenshot img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MySQL Data Recovery Case Study</h1>
+        <div class="case-meta">
+            <div class="meta-item"><strong>Client:</strong> [Client Name]</div>
+            <div class="meta-item"><strong>Industry:</strong> [Industry]</div>
+            <div class="meta-item"><strong>Date:</strong> [Month Year]</div>
+            <div class="meta-item"><strong>Duration:</strong> [Time Taken]</div>
+        </div>
+    </header>
+
+    <div class="case-content">
+        <h2>Project Overview</h2>
+        <p>[Brief introduction to the project and the client's business. Explain the importance of the database and data that needed recovery.]</p>
+        
+        <div class="problem-solution">
+            <div class="problem">
+                <h3>The Problem</h3>
+                <p>[Detailed description of the data loss scenario. For example:]</p>
+                <ul>
+                    <li>Accidental deletion of critical tables</li>
+                    <li>Corruption due to hardware failure</li>
+                    <li>Failed migration or upgrade</li>
+                    <li>Database crash with incomplete backups</li>
+                    <li>Ransomware attack encrypting database files</li>
+                </ul>
+                <p>[Describe the impact on the client's operations.]</p>
+            </div>
+            
+            <div class="solution">
+                <h3>Our Solution</h3>
+                <p>[High-level overview of your recovery approach:]</p>
+                <ul>
+                    <li>Assessment of damage and recovery options</li>
+                    <li>Implementation of specialized recovery techniques</li>
+                    <li>Data validation and integrity checks</li>
+                    <li>Preventive measures for the future</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Technical Approach</h2>
+        <p>[Detailed explanation of the recovery process. This could include:]</p>
+        
+        <h3>Step 1: Initial Assessment</h3>
+        <p>[How you evaluated the situation, what tools you used to diagnose the problem, what you discovered.]</p>
+        
+        <h3>Step 2: Recovery Strategy</h3>
+        <p>[Explanation of why you chose a particular recovery method over others. Examples:]</p>
+        <ul>
+            <li>Binary log analysis and point-in-time recovery</li>
+            <li>InnoDB recovery tools for corrupted tables</li>
+            <li>Forensic analysis of database files</li>
+            <li>Partial recovery from damaged backups</li>
+        </ul>
+        
+        <h3>Step 3: Implementation</h3>
+        <p>[Detailed steps taken during the actual recovery process. Be technical but readable.]</p>
+        
+        <h3>Step 4: Data Validation</h3>
+        <p>[How you ensured the recovered data was complete and accurate.]</p>
+        
+        <div class="tech-used">
+            <h3>Technologies & Tools Used</h3>
+            <div class="tech-item">MySQL Recovery Tools</div>
+            <div class="tech-item">Percona XtraBackup</div>
+            <div class="tech-item">MySQL Enterprise Backup</div>
+            <div class="tech-item">Binary Log Analysis</div>
+            <div class="tech-item">InnoDB Recovery</div>
+            <div class="tech-item">Custom Scripts</div>
+            <!-- Add more as needed -->
+        </div>
+
+        <div class="results">
+            <h3>Results & Impact</h3>
+            <p>[Quantify the success of the recovery where possible:]</p>
+            <ul>
+                <li>Recovered [X]% of the lost data</li>
+                <li>Reduced downtime from estimated [Y] days to [Z] hours</li>
+                <li>Prevented [amount] in potential losses</li>
+                <li>Implemented new backup strategy to prevent recurrence</li>
+            </ul>
+            <p>[Client testimonial or quote could go here.]</p>
+        </div>
+
+        <div class="screenshots">
+            <h3>Screenshots</h3>
+            <div class="screenshot">
+                <img src="recovery-process.jpg" alt="MySQL recovery process in progress">
+                <div class="caption">MySQL recovery process using [specific tool/technique]</div>
+            </div>
+            <div class="screenshot">
+                <img src="data-validation.jpg" alt="Data validation after recovery">
+                <div class="caption">Validating recovered data integrity</div>
+            </div>
+            <!-- Add more screenshots as needed -->
+        </div>
+
+        <h2>Lessons Learned</h2>
+        <p>[Key takeaways from this recovery project that could benefit others:]</p>
+        <ul>
+            <li>Importance of regular, tested backups</li>
+            <li>Value of binary logging for point-in-time recovery</li>
+            <li>Critical recovery techniques every DBA should know</li>
+            <li>How to prevent similar situations</li>
+        </ul>
+
+        <a href="portfolio.html" class="back-button">← Back to Portfolio</a>
+    </div>
+</body>
+</html>
