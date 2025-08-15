@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Triddles Forensics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">🔍 Triddles Forensics</div>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+  </nav>
+</header>
+
+<section class="project-filter">
+  <button class="filter-btn" data-category="all">All</button>
+  <button class="filter-btn" data-category="database">Database Forensics</button>
+  <button class="filter-btn" data-category="disk">Disk Forensics</button>
+  <button class="filter-btn" data-category="network">Network Forensics</button>
+  <button class="filter-btn" data-category="malware">Malware Analysis</button>
+</section>
+
+<section class="projects-grid">
+  <div class="project-card" data-category="database">
+    <img src="images/db-case1.jpg" alt="DB Forensics">
+    <h3>MySQL Data Recovery Case</h3>
+    <p>Recovered and analyzed deleted MySQL records...</p>
+    <a href="project.html">Read More</a>
+  </div>
+
+  <div class="project-card" data-category="disk">
+    <img src="images/disk-case1.jpg" alt="Disk Forensics">
+    <h3>NTFS Deleted File Recovery</h3>
+    <p>Carved out deleted files using Autopsy...</p>
+    <a href="project.html">Read More</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Triddles Forensics | Powered by GitHub Pages</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
